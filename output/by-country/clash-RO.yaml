@@ -21,36 +21,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - wangyu
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 04 - wangyu
-  type: vless
-  server: roxnsk.color-shop.ir
-  port: 8080
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 05 - wangyu
   type: ss
   server: 194.68.44.42
   port: 64546
   cipher: chacha20-ietf-poly1305
   password: U83u9OGpvSatIUW7LsWffr
   udp: true
-- name: 🇷🇴 RO 06 - wangyu
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,9 +35,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - wangyu
   - 🇷🇴 RO 02 - wangyu
   - 🇷🇴 RO 03 - wangyu
-  - 🇷🇴 RO 04 - wangyu
-  - 🇷🇴 RO 05 - wangyu
-  - 🇷🇴 RO 06 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,8 +43,5 @@ proxy-groups:
   - 🇷🇴 RO 01 - wangyu
   - 🇷🇴 RO 02 - wangyu
   - 🇷🇴 RO 03 - wangyu
-  - 🇷🇴 RO 04 - wangyu
-  - 🇷🇴 RO 05 - wangyu
-  - 🇷🇴 RO 06 - wangyu
 rules:
 - MATCH,PROXIES

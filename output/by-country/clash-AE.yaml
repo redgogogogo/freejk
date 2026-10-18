@@ -6,7 +6,21 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - wangyu
   type: vless
-  server: 84.235.244.108
+  server: 31.57.190.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 02 - wangyu
+  type: vless
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -17,7 +31,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - wangyu
+- name: 🇦🇪 阿联酋 (UAE) 03 - wangyu
   type: vless
   server: 31.57.190.89
   port: 443
@@ -31,62 +45,45 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 03 - wangyu
-  type: vless
-  server: 31.57.190.50
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 04 - wangyu
   type: vless
-  server: 5.9.117.252
-  port: 4433
-  uuid: ef286b0e-21ed-4e2b-9110-e2ddc7627892
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vless
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 05 - wangyu
   type: vless
-  server: 31.57.190.15
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - wangyu
   type: vless
-  server: 54.178.110.17
-  port: 4443
-  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - wangyu
   type: vless
   server: uae.unixzone.us
@@ -102,7 +99,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - wangyu
   type: vless
-  server: 31.57.190.89
+  server: 31.57.190.50
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -111,10 +108,17 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 09 - wangyu
+  type: ss
+  server: 200.181.82.91
+  port: 21737
+  cipher: aes-256-gcm
+  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 10 - wangyu
   type: vless
   server: 45.59.120.217
   port: 443
@@ -126,7 +130,7 @@ proxies:
     public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
   servername: strm.yandex.net
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 10 - wangyu
+- name: 🇦🇪 阿联酋 (UAE) 11 - wangyu
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -139,33 +143,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - wangyu
+- name: 🇦🇪 阿联酋 (UAE) 12 - wangyu
   type: vless
-  server: 57.129.130.10
-  port: 52014
-  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /fp=chrome
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 12 - wangyu
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+      Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 13 - wangyu
   type: vless
   server: uae.unixzone.us
@@ -181,111 +172,16 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 14 - wangyu
   type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 79c351da-fdeb-4761-b514-46e1f4914d00
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 15 - wangyu
-  type: vless
-  server: 31.57.190.50
+  server: 45.59.120.217
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 16 - wangyu
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 17 - wangyu
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 18 - wangyu
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 19 - wangyu
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 20 - wangyu
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 21 - wangyu
-  type: vless
-  server: 147.78.0.186
-  port: 2053
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.cndyw.ggff.net
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -305,13 +201,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 12 - wangyu
   - 🇦🇪 阿联酋 (UAE) 13 - wangyu
   - 🇦🇪 阿联酋 (UAE) 14 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 15 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 16 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 17 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 18 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 19 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 20 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 21 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -331,12 +220,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 12 - wangyu
   - 🇦🇪 阿联酋 (UAE) 13 - wangyu
   - 🇦🇪 阿联酋 (UAE) 14 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 15 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 16 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 17 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 18 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 19 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 20 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 21 - wangyu
 rules:
 - MATCH,PROXIES
