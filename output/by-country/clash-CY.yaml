@@ -7,11 +7,16 @@ proxies:
 - name: 🇨🇾 CY 01 - wangyu
   type: vless
   server: 5.253.29.254
-  port: 10443
+  port: 14430
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
 - name: 🇨🇾 CY 02 - wangyu
   type: vless
   server: 5.253.29.254
@@ -25,62 +30,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
-- name: 🇨🇾 CY 03 - wangyu
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇾 CY 04 - wangyu
-  type: vless
-  server: 213.111.177.107
-  port: 443
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇨🇾 CY 05 - wangyu
-  type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 CY 06 - wangyu
-  type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 CY 07 - wangyu
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,11 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 CY 01 - wangyu
   - 🇨🇾 CY 02 - wangyu
-  - 🇨🇾 CY 03 - wangyu
-  - 🇨🇾 CY 04 - wangyu
-  - 🇨🇾 CY 05 - wangyu
-  - 🇨🇾 CY 06 - wangyu
-  - 🇨🇾 CY 07 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,10 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 CY 01 - wangyu
   - 🇨🇾 CY 02 - wangyu
-  - 🇨🇾 CY 03 - wangyu
-  - 🇨🇾 CY 04 - wangyu
-  - 🇨🇾 CY 05 - wangyu
-  - 🇨🇾 CY 06 - wangyu
-  - 🇨🇾 CY 07 - wangyu
 rules:
 - MATCH,PROXIES

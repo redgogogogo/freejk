@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - wangyu
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
@@ -31,12 +31,13 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 04 - wangyu
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 05 - wangyu
   type: vless
   server: site.teslamotor.site
@@ -45,24 +46,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 06 - wangyu
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 07 - wangyu
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +56,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - wangyu
   - 🇵🇱 PL 04 - wangyu
   - 🇵🇱 PL 05 - wangyu
-  - 🇵🇱 PL 06 - wangyu
-  - 🇵🇱 PL 07 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,7 +66,5 @@ proxy-groups:
   - 🇵🇱 PL 03 - wangyu
   - 🇵🇱 PL 04 - wangyu
   - 🇵🇱 PL 05 - wangyu
-  - 🇵🇱 PL 06 - wangyu
-  - 🇵🇱 PL 07 - wangyu
 rules:
 - MATCH,PROXIES
