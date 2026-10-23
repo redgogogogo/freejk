@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - wangyu"
+        "🇺🇦 UA 01 - wangyu",
+        "🇺🇦 UA 02 - wangyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - wangyu"
+        "🇺🇦 UA 01 - wangyu",
+        "🇺🇦 UA 02 - wangyu"
       ],
       "url": "https://www.google.com/generate_204"
     },

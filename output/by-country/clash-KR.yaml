@@ -6,20 +6,19 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - wangyu
   type: vmess
-  server: seoul02.zgjok.com
-  port: 443
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: ''
+    path: /cctv13.m3u8
     headers:
-      Host: ''
+      Host: 132.145.80.230
 - name: 🇰🇷 韩国 (South Korea) 02 - wangyu
   type: ss
   server: 141.164.45.187
@@ -38,8 +37,15 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 04 - wangyu
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 05 - wangyu
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -50,8 +56,20 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 05 - wangyu
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 06 - wangyu
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 07 - wangyu
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -71,6 +89,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - wangyu
   - 🇰🇷 韩国 (South Korea) 04 - wangyu
   - 🇰🇷 韩国 (South Korea) 05 - wangyu
+  - 🇰🇷 韩国 (South Korea) 06 - wangyu
+  - 🇰🇷 韩国 (South Korea) 07 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,5 +101,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - wangyu
   - 🇰🇷 韩国 (South Korea) 04 - wangyu
   - 🇰🇷 韩国 (South Korea) 05 - wangyu
+  - 🇰🇷 韩国 (South Korea) 06 - wangyu
+  - 🇰🇷 韩国 (South Korea) 07 - wangyu
 rules:
 - MATCH,PROXIES

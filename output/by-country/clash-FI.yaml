@@ -6,39 +6,19 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - wangyu
   type: vless
-  server: 188.114.98.0
+  server: 199.232.239.239
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 05355ffb-a8f3-473b-cb9c-c8401897b03f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fi1.merky.one
+  servername: firefox.com
   network: ws
   ws-opts:
-    path: /mky-ws-4f19c8a7
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
     headers:
-      Host: fi1.merky.one
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
 - name: 🇫🇮 FI 02 - wangyu
-  type: vmess
-  server: 65.109.209.239
-  port: 16911
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 03 - wangyu
-  type: vmess
-  server: 65.109.209.239
-  port: 16911
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 04 - wangyu
   type: vless
   server: 188.114.98.0
   port: 443
@@ -52,7 +32,7 @@ proxies:
     path: /fdtiouasopeiyre0r95y8?ed=2560
     headers:
       Host: server8.9966338.xyz
-- name: 🇫🇮 FI 05 - wangyu
+- name: 🇫🇮 FI 03 - wangyu
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -73,8 +53,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - wangyu
   - 🇫🇮 FI 02 - wangyu
   - 🇫🇮 FI 03 - wangyu
-  - 🇫🇮 FI 04 - wangyu
-  - 🇫🇮 FI 05 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,7 +61,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - wangyu
   - 🇫🇮 FI 02 - wangyu
   - 🇫🇮 FI 03 - wangyu
-  - 🇫🇮 FI 04 - wangyu
-  - 🇫🇮 FI 05 - wangyu
 rules:
 - MATCH,PROXIES
