@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 03 - wangyu
   type: vless
   server: 151.245.106.49
@@ -51,40 +51,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 05 - wangyu
-  type: ss
-  server: 43.201.148.241
-  port: 2096
-  cipher: chacha20-ietf-poly1305
-  password: bf5129f1-31f5-4edf-a07a-27ec31b26c1d
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 06 - wangyu
-  type: vmess
-  server: seoul02.zgjok.com
-  port: 443
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 07 - wangyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,9 +61,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - wangyu
   - 🇰🇷 韩国 (South Korea) 03 - wangyu
   - 🇰🇷 韩国 (South Korea) 04 - wangyu
-  - 🇰🇷 韩国 (South Korea) 05 - wangyu
-  - 🇰🇷 韩国 (South Korea) 06 - wangyu
-  - 🇰🇷 韩国 (South Korea) 07 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,8 +70,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - wangyu
   - 🇰🇷 韩国 (South Korea) 03 - wangyu
   - 🇰🇷 韩国 (South Korea) 04 - wangyu
-  - 🇰🇷 韩国 (South Korea) 05 - wangyu
-  - 🇰🇷 韩国 (South Korea) 06 - wangyu
-  - 🇰🇷 韩国 (South Korea) 07 - wangyu
 rules:
 - MATCH,PROXIES
