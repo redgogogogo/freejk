@@ -6,13 +6,29 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - wangyu
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 02 - wangyu
+  type: vless
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 03 - wangyu
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 04 - wangyu
   type: vless
   server: pl1.h1cloud.net
   port: 27591
@@ -24,27 +40,11 @@ proxies:
     public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇵🇱 PL 03 - wangyu
+- name: 🇵🇱 PL 05 - wangyu
   type: vless
   server: 5.22.221.127
   port: 443
   uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 04 - wangyu
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 05 - wangyu
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -53,14 +53,6 @@ proxies:
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 07 - wangyu
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -75,7 +67,6 @@ proxy-groups:
   - 🇵🇱 PL 04 - wangyu
   - 🇵🇱 PL 05 - wangyu
   - 🇵🇱 PL 06 - wangyu
-  - 🇵🇱 PL 07 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,6 +78,5 @@ proxy-groups:
   - 🇵🇱 PL 04 - wangyu
   - 🇵🇱 PL 05 - wangyu
   - 🇵🇱 PL 06 - wangyu
-  - 🇵🇱 PL 07 - wangyu
 rules:
 - MATCH,PROXIES

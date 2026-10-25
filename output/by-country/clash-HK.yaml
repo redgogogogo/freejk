@@ -5,118 +5,10 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21002
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21003
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21003
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21002
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21002
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21002
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21004
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21001
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21003
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - wangyu
   type: vmess
   server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   udp: true
@@ -126,8 +18,8 @@ proxies:
   ws-opts:
     path: /arki
     headers:
-      Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - wangyu
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wangyu
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -140,68 +32,24 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 103.180.20.108
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21003
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wangyu
+  type: vmess
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21001
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21001
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21002
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21003
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - wangyu
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - wangyu
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -216,57 +64,6 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21001
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - wangyu
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: google.com
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21002
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - wangyu
-  type: vless
-  server: 526.150333.xyz
-  port: 21003
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -276,23 +73,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wangyu
   - 🇭🇰 中国香港 (Hong Kong) 03 - wangyu
   - 🇭🇰 中国香港 (Hong Kong) 04 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 05 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 06 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 07 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 08 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 09 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 10 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 11 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 12 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 13 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 14 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 15 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 16 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 17 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 18 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 19 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 20 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 21 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -302,22 +82,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wangyu
   - 🇭🇰 中国香港 (Hong Kong) 03 - wangyu
   - 🇭🇰 中国香港 (Hong Kong) 04 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 05 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 06 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 07 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 08 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 09 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 10 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 11 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 12 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 13 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 14 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 15 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 16 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 17 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 18 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 19 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 20 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 21 - wangyu
 rules:
 - MATCH,PROXIES

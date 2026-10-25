@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wangyu
-  type: ss
-  server: 46.17.43.227
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - wangyu
   type: vmess
   server: 158.160.180.165
@@ -36,6 +43,20 @@ proxies:
     path: /media/stream/qUWu2oaFgxAw
     headers:
       Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 04 - wangyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - wangyu
+  type: ss
+  server: 46.17.43.227
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +65,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - wangyu
   - 🇷🇺 俄罗斯 (Russia) 02 - wangyu
   - 🇷🇺 俄罗斯 (Russia) 03 - wangyu
+  - 🇷🇺 俄罗斯 (Russia) 04 - wangyu
+  - 🇷🇺 俄罗斯 (Russia) 05 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +75,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - wangyu
   - 🇷🇺 俄罗斯 (Russia) 02 - wangyu
   - 🇷🇺 俄罗斯 (Russia) 03 - wangyu
+  - 🇷🇺 俄罗斯 (Russia) 04 - wangyu
+  - 🇷🇺 俄罗斯 (Russia) 05 - wangyu
 rules:
 - MATCH,PROXIES
