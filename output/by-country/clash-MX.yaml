@@ -12,10 +12,64 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mx001.zestapp778.com
+  servername: 149.104.90.21
 - name: 🇲🇽 MX 02 - wangyu
   type: vless
   server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 03 - wangyu
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 04 - wangyu
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 05 - wangyu
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 06 - wangyu
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 07 - wangyu
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 08 - wangyu
+  type: vless
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -29,6 +83,12 @@ proxy-groups:
   - AUTO
   - 🇲🇽 MX 01 - wangyu
   - 🇲🇽 MX 02 - wangyu
+  - 🇲🇽 MX 03 - wangyu
+  - 🇲🇽 MX 04 - wangyu
+  - 🇲🇽 MX 05 - wangyu
+  - 🇲🇽 MX 06 - wangyu
+  - 🇲🇽 MX 07 - wangyu
+  - 🇲🇽 MX 08 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +96,11 @@ proxy-groups:
   proxies:
   - 🇲🇽 MX 01 - wangyu
   - 🇲🇽 MX 02 - wangyu
+  - 🇲🇽 MX 03 - wangyu
+  - 🇲🇽 MX 04 - wangyu
+  - 🇲🇽 MX 05 - wangyu
+  - 🇲🇽 MX 06 - wangyu
+  - 🇲🇽 MX 07 - wangyu
+  - 🇲🇽 MX 08 - wangyu
 rules:
 - MATCH,PROXIES

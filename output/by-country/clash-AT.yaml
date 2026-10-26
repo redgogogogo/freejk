@@ -6,61 +6,19 @@ log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - wangyu
   type: vless
-  server: 62.83.19.127
+  server: au7.pad-sservice.lat
   port: 8443
   uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: au5.pad-sservice.lat
+  servername: au7.pad-sservice.lat
   network: ws
   ws-opts:
-    path: /AU5W?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /AU7W
     headers:
-      Host: au5.pad-sservice.lat
+      Host: au7.pad-sservice.lat
 - name: 🇦🇹 AT 02 - wangyu
-  type: vless
-  server: au5.pad-sservice.lat
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: au5.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /AU5W
-    headers:
-      Host: au5.pad-sservice.lat
-- name: 🇦🇹 AT 03 - wangyu
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇹 AT 04 - wangyu
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇹 AT 05 - wangyu
-  type: vless
-  server: 62.83.19.127
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: au5.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /AU5W
-    headers:
-      Host: au5.pad-sservice.lat
-- name: 🇦🇹 AT 06 - wangyu
   type: vless
   server: 62.83.41.69
   port: 8443
@@ -74,6 +32,97 @@ proxies:
     path: /AU6W
     headers:
       Host: au6.pad-sservice.lat
+- name: 🇦🇹 AT 03 - wangyu
+  type: vless
+  server: 62.83.41.69
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au6.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU6W
+    headers:
+      Host: au6.pad-sservice.lat
+- name: 🇦🇹 AT 04 - wangyu
+  type: vless
+  server: 62.83.19.127
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au5.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU5W?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: au5.pad-sservice.lat
+- name: 🇦🇹 AT 05 - wangyu
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇹 AT 06 - wangyu
+  type: vless
+  server: au6.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au6.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU6W
+    headers:
+      Host: au6.pad-sservice.lat
+- name: 🇦🇹 AT 07 - wangyu
+  type: vless
+  server: au6.pad-sservice.lat
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au6.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU6W
+    headers:
+      Host: au6.pad-sservice.lat
+- name: 🇦🇹 AT 08 - wangyu
+  type: vless
+  server: 152.53.1.40
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au4.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /A14U
+    headers:
+      Host: au4.pad-service.com
+- name: 🇦🇹 AT 09 - wangyu
+  type: vless
+  server: 62.83.19.127
+  port: 8443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: au5.pad-sservice.lat
+  network: ws
+  ws-opts:
+    path: /AU5W
+    headers:
+      Host: au5.pad-sservice.lat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +134,9 @@ proxy-groups:
   - 🇦🇹 AT 04 - wangyu
   - 🇦🇹 AT 05 - wangyu
   - 🇦🇹 AT 06 - wangyu
+  - 🇦🇹 AT 07 - wangyu
+  - 🇦🇹 AT 08 - wangyu
+  - 🇦🇹 AT 09 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,5 +148,8 @@ proxy-groups:
   - 🇦🇹 AT 04 - wangyu
   - 🇦🇹 AT 05 - wangyu
   - 🇦🇹 AT 06 - wangyu
+  - 🇦🇹 AT 07 - wangyu
+  - 🇦🇹 AT 08 - wangyu
+  - 🇦🇹 AT 09 - wangyu
 rules:
 - MATCH,PROXIES
