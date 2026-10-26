@@ -12,13 +12,27 @@ proxies:
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
 - name: 🇨🇭 CH 02 - wangyu
+  type: vless
+  server: 57.129.130.63
+  port: 52014
+  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇨🇭 CH 03 - wangyu
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 03 - wangyu
+- name: 🇨🇭 CH 04 - wangyu
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -29,7 +43,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +52,7 @@ proxy-groups:
   - 🇨🇭 CH 01 - wangyu
   - 🇨🇭 CH 02 - wangyu
   - 🇨🇭 CH 03 - wangyu
+  - 🇨🇭 CH 04 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   - 🇨🇭 CH 01 - wangyu
   - 🇨🇭 CH 02 - wangyu
   - 🇨🇭 CH 03 - wangyu
+  - 🇨🇭 CH 04 - wangyu
 rules:
 - MATCH,PROXIES
