@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - wangyu
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇨🇭 CH 02 - wangyu
   type: ss
   server: 132.243.175.144
@@ -19,6 +24,41 @@ proxies:
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
 - name: 🇨🇭 CH 03 - wangyu
+  type: vless
+  server: 203.137.165.164
+  port: 57554
+  uuid: e5b2a063-a114-4bd0-802d-b2da1fe1d1da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇨🇭 CH 04 - wangyu
+  type: vless
+  server: 54.179.79.12
+  port: 53646
+  uuid: d57b9436-a238-4066-8b11-d23ae57c5982
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇨🇭 CH 05 - wangyu
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 06 - wangyu
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -38,6 +78,9 @@ proxy-groups:
   - 🇨🇭 CH 01 - wangyu
   - 🇨🇭 CH 02 - wangyu
   - 🇨🇭 CH 03 - wangyu
+  - 🇨🇭 CH 04 - wangyu
+  - 🇨🇭 CH 05 - wangyu
+  - 🇨🇭 CH 06 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +89,8 @@ proxy-groups:
   - 🇨🇭 CH 01 - wangyu
   - 🇨🇭 CH 02 - wangyu
   - 🇨🇭 CH 03 - wangyu
+  - 🇨🇭 CH 04 - wangyu
+  - 🇨🇭 CH 05 - wangyu
+  - 🇨🇭 CH 06 - wangyu
 rules:
 - MATCH,PROXIES

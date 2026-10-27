@@ -40,19 +40,6 @@ proxies:
       Host: 178.172.227.228
 - name: 🇧🇾 BY 04 - wangyu
   type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 BY 05 - wangyu
-  type: vless
   server: 178.172.227.124
   port: 14430
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
@@ -73,7 +60,6 @@ proxy-groups:
   - 🇧🇾 BY 02 - wangyu
   - 🇧🇾 BY 03 - wangyu
   - 🇧🇾 BY 04 - wangyu
-  - 🇧🇾 BY 05 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,6 +69,5 @@ proxy-groups:
   - 🇧🇾 BY 02 - wangyu
   - 🇧🇾 BY 03 - wangyu
   - 🇧🇾 BY 04 - wangyu
-  - 🇧🇾 BY 05 - wangyu
 rules:
 - MATCH,PROXIES
