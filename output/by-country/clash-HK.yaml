@@ -6,67 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wangyu
   type: vmess
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qtkdr8jxe3wefxjm.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wangyu
-  type: vless
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wangyu
-  type: vmess
-  server: 47.76.57.83
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wangyu
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - wangyu
-  type: vmess
   server: 156.245.232.239
   port: 35043
   uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
@@ -80,35 +19,37 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - wangyu
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wangyu
   type: vless
-  server: 103.180.20.108
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  server: 43.254.166.147
+  port: 443
+  uuid: c6553c99-837d-490a-af1c-c526d8c38e99
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: usyun.cc
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /trial-gs-relay
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - wangyu
-  type: vless
-  server: 103.180.20.108
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+      Host: usyun.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wangyu
+  type: vmess
+  server: 47.243.153.153
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: i2psm3knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /ws-vmess
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - wangyu
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - wangyu
   type: vmess
   server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
@@ -124,7 +65,36 @@ proxies:
     path: /ws-vmess
     headers:
       Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - wangyu
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - wangyu
+  type: vless
+  server: 103.180.20.108
+  port: 8443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - wangyu
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - wangyu
   type: vmess
   server: 47.76.57.83
   port: 443
@@ -140,20 +110,22 @@ proxies:
     path: /ws-vmess
     headers:
       Host: vah4urdzl3jdx5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - wangyu
-  type: vless
-  server: 43.254.166.147
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - wangyu
+  type: vmess
+  server: 47.76.57.83
   port: 443
-  uuid: c6553c99-837d-490a-af1c-c526d8c38e99
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: usyun.cc
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
   network: ws
   ws-opts:
-    path: /trial-gs-relay
+    path: /ws-vmess
     headers:
-      Host: usyun.cc
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -167,8 +139,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - wangyu
   - 🇭🇰 中国香港 (Hong Kong) 07 - wangyu
   - 🇭🇰 中国香港 (Hong Kong) 08 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 09 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 10 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -182,7 +152,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - wangyu
   - 🇭🇰 中国香港 (Hong Kong) 07 - wangyu
   - 🇭🇰 中国香港 (Hong Kong) 08 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 09 - wangyu
-  - 🇭🇰 中国香港 (Hong Kong) 10 - wangyu
 rules:
 - MATCH,PROXIES
