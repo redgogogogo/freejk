@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 LU 01 - wangyu"
+        "🇱🇺 LU 01 - wangyu",
+        "🇱🇺 LU 02 - wangyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 LU 01 - wangyu"
+        "🇱🇺 LU 01 - wangyu",
+        "🇱🇺 LU 02 - wangyu"
       ],
       "url": "https://www.google.com/generate_204"
     },
