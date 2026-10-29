@@ -6,14 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - wangyu
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 02 - wangyu
-  type: vless
   server: 2.26.6.1
   port: 2087
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
@@ -21,6 +13,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
+- name: 🇵🇱 PL 02 - wangyu
+  type: ss
+  server: pol.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  udp: true
 - name: 🇵🇱 PL 03 - wangyu
   type: vless
   server: site.teslamotor.site
@@ -31,22 +30,13 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 04 - wangyu
   type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 05 - wangyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 06 - wangyu
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -54,15 +44,15 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 07 - wangyu
+- name: 🇵🇱 PL 06 - wangyu
   type: vless
-  server: edge10.cyrionflare.com
+  server: 168.222.43.53
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 08 - wangyu
+- name: 🇵🇱 PL 07 - wangyu
   type: vless
   server: 155.117.5.208
   port: 20001
@@ -70,11 +60,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 08 - wangyu
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇵🇱 PL 09 - wangyu
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
@@ -88,20 +86,22 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 11 - wangyu
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 12 - wangyu
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
