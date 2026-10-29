@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - wangyu
+  type: ss
+  server: staging.lastilhame.monster
+  port: 49917
+  cipher: chacha20-ietf-poly1305
+  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
+  udp: true
+- name: 🇺🇦 UA 02 - wangyu
   type: vless
   server: 216.24.57.225
   port: 2083
@@ -18,27 +25,6 @@ proxies:
     path: /wss
     headers:
       Host: pol.netvia.ir
-- name: 🇺🇦 UA 02 - wangyu
-  type: ss
-  server: 104.253.216.227
-  port: 49917
-  cipher: chacha20-ietf-poly1305
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
-  udp: true
-- name: 🇺🇦 UA 03 - wangyu
-  type: vless
-  server: 92.113.107.120
-  port: 443
-  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: indigostar.click
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 92.113.107.120
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - wangyu
   - 🇺🇦 UA 02 - wangyu
-  - 🇺🇦 UA 03 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - wangyu
   - 🇺🇦 UA 02 - wangyu
-  - 🇺🇦 UA 03 - wangyu
 rules:
 - MATCH,PROXIES
