@@ -48,32 +48,30 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 04 - wangyu
   type: vless
-  server: 65.109.211.81
-  port: 465
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: hw6.divarkhaghazi.com.
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - wangyu
   type: vless
-  server: 65.109.210.221
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: hw3.divarkhaghazi.com.
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 06 - wangyu
   type: vless
   server: 45.144.234.157
@@ -87,6 +85,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 07 - wangyu
+  type: vless
+  server: 65.109.210.221
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +110,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - wangyu
   - 🇫🇮 FI 05 - wangyu
   - 🇫🇮 FI 06 - wangyu
+  - 🇫🇮 FI 07 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,5 +122,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - wangyu
   - 🇫🇮 FI 05 - wangyu
   - 🇫🇮 FI 06 - wangyu
+  - 🇫🇮 FI 07 - wangyu
 rules:
 - MATCH,PROXIES
