@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - wangyu
   type: vless
-  server: 188.114.98.0
+  server: 155.212.240.10
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 02 - wangyu
   type: vless
-  server: 155.212.240.10
+  server: 188.114.98.0
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -43,10 +43,24 @@ proxies:
   servername: n.bitpulse.me
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560fp=unsafe
     headers:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 04 - wangyu
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 05 - wangyu
   type: vless
   server: 172.66.128.146
   port: 443
@@ -58,20 +72,6 @@ proxies:
   network: ws
   ws-opts:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 05 - wangyu
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560fp=unsafe
     headers:
       Host: n.bitpulse.me
 proxy-groups:
