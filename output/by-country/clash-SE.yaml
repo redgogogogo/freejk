@@ -5,6 +5,58 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - wangyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 02 - wangyu
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
+- name: 🇸🇪 SE 03 - wangyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 04 - wangyu
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
+- name: 🇸🇪 SE 05 - wangyu
   type: ss
   server: 138.199.55.243
   port: 19999
@@ -17,11 +69,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - wangyu
+  - 🇸🇪 SE 02 - wangyu
+  - 🇸🇪 SE 03 - wangyu
+  - 🇸🇪 SE 04 - wangyu
+  - 🇸🇪 SE 05 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - wangyu
+  - 🇸🇪 SE 02 - wangyu
+  - 🇸🇪 SE 03 - wangyu
+  - 🇸🇪 SE 04 - wangyu
+  - 🇸🇪 SE 05 - wangyu
 rules:
 - MATCH,PROXIES
