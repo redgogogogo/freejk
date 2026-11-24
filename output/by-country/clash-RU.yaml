@@ -6,15 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wangyu
   type: vless
-  server: 136.148.83.71
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wccfu-ru-79dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 02 - wangyu
-  type: vless
   server: 136.148.83.69
   port: 443
   uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
@@ -22,6 +13,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 02 - wangyu
+  type: vless
+  server: 72.56.1.44
+  port: 443
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: paperbirch.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: paperbirch.merlano.monster
 - name: 🇷🇺 俄罗斯 (Russia) 03 - wangyu
   type: vless
   server: 136.148.83.69
@@ -32,31 +37,6 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - wangyu
-  type: ss
-  server: 48.103.218.77
-  port: 18443
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - wangyu
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 06 - wangyu
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 07 - wangyu
   type: vless
   server: 147.45.175.81
   port: 443
@@ -67,27 +47,27 @@ proxies:
   servername: xsru2.freeddns.org
   network: ws
   ws-opts:
-    path: wsru
+    path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 08 - wangyu
+- name: 🇷🇺 俄罗斯 (Russia) 05 - wangyu
   type: vless
-  server: 136.148.83.69
+  server: 136.148.83.70
   port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 09 - wangyu
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 06 - wangyu
   type: vless
-  server: 188.68.216.33
+  server: 136.148.83.70
   port: 443
-  uuid: 08ef7604-b3a5-0001-b264-0038fa7c44fc
+  uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pmdhivnevikmltdhqp.fcloudservices.site
+  servername: aszbk-ru-78dc.my-fade.cloud
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,9 +79,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - wangyu
   - 🇷🇺 俄罗斯 (Russia) 05 - wangyu
   - 🇷🇺 俄罗斯 (Russia) 06 - wangyu
-  - 🇷🇺 俄罗斯 (Russia) 07 - wangyu
-  - 🇷🇺 俄罗斯 (Russia) 08 - wangyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,8 +90,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - wangyu
   - 🇷🇺 俄罗斯 (Russia) 05 - wangyu
   - 🇷🇺 俄罗斯 (Russia) 06 - wangyu
-  - 🇷🇺 俄罗斯 (Russia) 07 - wangyu
-  - 🇷🇺 俄罗斯 (Russia) 08 - wangyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - wangyu
 rules:
 - MATCH,PROXIES
