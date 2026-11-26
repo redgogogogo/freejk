@@ -19,51 +19,31 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 02 - wangyu
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - wangyu
-  type: ss
-  server: 151.241.19.29
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 04 - wangyu
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 05 - wangyu
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - wangyu
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -76,16 +56,14 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - wangyu
-  type: vless
-  server: 94.183.167.172
-  port: 443
-  uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
+- name: 🇦🇪 阿联酋 (UAE) 05 - wangyu
+  type: ss
+  server: 151.241.19.29
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: s8k4.scan-cdn.com
-- name: 🇦🇪 阿联酋 (UAE) 08 - wangyu
+- name: 🇦🇪 阿联酋 (UAE) 06 - wangyu
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -98,6 +76,32 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - wangyu
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 08 - wangyu
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 09 - wangyu
   type: ss
   server: 151.241.19.36
@@ -119,55 +123,6 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 11 - wangyu
-  type: vless
-  server: 94.183.167.172
-  port: 443
-  uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: s8k4.scan-cdn.com
-- name: 🇦🇪 阿联酋 (UAE) 12 - wangyu
-  type: vless
-  server: 213.183.41.31
-  port: 8459
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: photos.plumstatic.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 213.183.41.31
-- name: 🇦🇪 阿联酋 (UAE) 13 - wangyu
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 14 - wangyu
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - wangyu
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -196,10 +151,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - wangyu
   - 🇦🇪 阿联酋 (UAE) 10 - wangyu
   - 🇦🇪 阿联酋 (UAE) 11 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 12 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 13 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 14 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 15 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -216,9 +167,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - wangyu
   - 🇦🇪 阿联酋 (UAE) 10 - wangyu
   - 🇦🇪 阿联酋 (UAE) 11 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 12 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 13 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 14 - wangyu
-  - 🇦🇪 阿联酋 (UAE) 15 - wangyu
 rules:
 - MATCH,PROXIES

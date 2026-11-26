@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - wangyu
   type: vless
-  server: turkey-ip1.mmdaqaorg.xyz
+  server: 143.246.136.128
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
@@ -15,32 +15,22 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - wangyu
   type: vless
-  server: 172.64.155.209
-  port: 443
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sinavm3.soft10.ir
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
+  servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - wangyu
   type: vless
-  server: 172.64.155.209
-  port: 443
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  server: 143.246.136.128
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sinavm3.soft10.ir
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
+  servername: turkey-ip1.mmdaqaorg.xyz
 proxy-groups:
 - name: PROXIES
   type: select

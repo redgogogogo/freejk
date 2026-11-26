@@ -16,19 +16,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇭 TH 02 - wangyu
   type: vmess
-  server: 8.213.211.160
-  port: 18565
-  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 03 - wangyu
-  type: vmess
-  server: 8.213.211.160
-  port: 18565
-  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
   alterId: 0
   cipher: auto
   udp: true
@@ -41,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - wangyu
   - 🇹🇭 TH 02 - wangyu
-  - 🇹🇭 TH 03 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - wangyu
   - 🇹🇭 TH 02 - wangyu
-  - 🇹🇭 TH 03 - wangyu
 rules:
 - MATCH,PROXIES
