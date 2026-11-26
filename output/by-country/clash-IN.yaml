@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - wangyu
   type: vless
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
   udp: true
@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - wangyu
   type: vless
   server: in.smrtai.top
@@ -30,20 +30,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - wangyu
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04 - wangyu
-  type: vless
-  server: xray-ikmqcro3-rapid-river-6.cloady.io
+  server: 13.140.253.35
   port: 443
   uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
   udp: true
@@ -55,9 +42,22 @@ proxies:
     path: /c54a815e676d9acc
     headers:
       Host: xray-ikmqcro3-rapid-river-6.cloady.io
+- name: 🇮🇳 印度 (India) 04 - wangyu
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 05 - wangyu
   type: vless
-  server: in.smrtai.top
+  server: 178.212.35.198
   port: 443
   uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
   udp: true
@@ -66,7 +66,20 @@ proxies:
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 06 - wangyu
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +90,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - wangyu
   - 🇮🇳 印度 (India) 04 - wangyu
   - 🇮🇳 印度 (India) 05 - wangyu
+  - 🇮🇳 印度 (India) 06 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +101,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - wangyu
   - 🇮🇳 印度 (India) 04 - wangyu
   - 🇮🇳 印度 (India) 05 - wangyu
+  - 🇮🇳 印度 (India) 06 - wangyu
 rules:
 - MATCH,PROXIES
