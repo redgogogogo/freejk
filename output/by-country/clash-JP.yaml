@@ -5,19 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - wangyu
-  type: ss
-  server: 149.22.87.240
+  type: vless
+  server: 104.21.219.160
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 02 - wangyu
-  type: ss
-  server: 8.211.174.60
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
+  type: vless
+  server: 104.19.12.94
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - wangyu
   type: vless
   server: 104.17.50.53
@@ -34,35 +48,32 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 04 - wangyu
   type: ss
-  server: 8.216.5.230
+  server: 8.216.17.189
   port: 5555
   cipher: aes-256-gcm
   password: '123456'
   udp: true
 - name: 🇯🇵 日本 (Japan) 05 - wangyu
   type: vless
-  server: 213.183.41.31
-  port: 8463
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
+  server: 50.7.159.242
+  port: 443
+  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: share.plumstatic.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 213.183.41.31
+  servername: jp.reddotcorp.org
 - name: 🇯🇵 日本 (Japan) 06 - wangyu
-  type: ss
-  server: 8.216.18.189
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
+  type: vless
+  server: 50.7.159.242
+  port: 443
+  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp.reddotcorp.org
 - name: 🇯🇵 日本 (Japan) 07 - wangyu
   type: vless
-  server: 104.21.219.160
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -76,35 +87,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 08 - wangyu
   type: ss
-  server: 47.91.2.13
+  server: 47.91.18.202
   port: 5555
   cipher: aes-256-gcm
   password: '123456'
   udp: true
 - name: 🇯🇵 日本 (Japan) 09 - wangyu
   type: ss
-  server: 8.216.9.190
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 10 - wangyu
   type: vless
-  server: 213.183.41.31
-  port: 8463
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: share.plumstatic.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 213.183.41.31
-- name: 🇯🇵 日本 (Japan) 11 - wangyu
-  type: vless
-  server: 104.24.0.1
+  server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -116,31 +113,38 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 11 - wangyu
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: 🇯🇵 日本 (Japan) 12 - wangyu
   type: ss
-  server: 8.216.9.41
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 13 - wangyu
   type: ss
-  server: 149.22.87.240
+  server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 14 - wangyu
   type: ss
-  server: 8.216.9.154
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 15 - wangyu
   type: vless
-  server: 154.31.114.162
-  port: 8443
+  server: 104.19.48.107
+  port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
@@ -152,9 +156,30 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 16 - wangyu
+  type: ss
+  server: 47.91.31.150
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 17 - wangyu
+  type: ss
+  server: 8.209.249.205
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 18 - wangyu
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 19 - wangyu
   type: vless
-  server: 154.31.114.162
-  port: 8443
+  server: 152.69.200.216
+  port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
@@ -165,73 +190,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 17 - wangyu
-  type: ss
-  server: 47.91.18.202
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 18 - wangyu
-  type: ss
-  server: 8.216.8.185
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 19 - wangyu
-  type: ss
-  server: 8.209.249.205
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
 - name: 🇯🇵 日本 (Japan) 20 - wangyu
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 21 - wangyu
-  type: vmess
-  server: 161.33.20.255
-  port: 8880
-  uuid: e0856508-d693-450a-a099-455091dc4f25
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /e0856508-d693-450a-a099-455091dc4f25-vm
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 22 - wangyu
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 23 - wangyu
-  type: ss
-  server: 47.91.16.50
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 24 - wangyu
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 25 - wangyu
   type: vless
-  server: 131.143.214.224
+  server: 104.19.164.155
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -240,74 +201,32 @@ proxies:
   servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
+    path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - wangyu
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 27 - wangyu
-  type: ss
-  server: 47.74.18.249
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 28 - wangyu
+- name: 🇯🇵 日本 (Japan) 21 - wangyu
   type: vless
-  server: 45.32.57.15
-  port: 8443
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: senflarelink-node-nwz76h.pages.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /flow=
+    path: /tyxyws
     headers:
-      Host: senflarelink-node-nwz76h.pages.dev
-- name: 🇯🇵 日本 (Japan) 29 - wangyu
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 22 - wangyu
+  type: vless
+  server: 50.7.159.242
+  port: 443
+  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 30 - wangyu
-  type: ss
-  server: 8.216.9.151
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 31 - wangyu
-  type: vmess
-  server: 156.239.224.107
-  port: 57278
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
+  servername: jp.reddotcorp.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -335,15 +254,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 20 - wangyu
   - 🇯🇵 日本 (Japan) 21 - wangyu
   - 🇯🇵 日本 (Japan) 22 - wangyu
-  - 🇯🇵 日本 (Japan) 23 - wangyu
-  - 🇯🇵 日本 (Japan) 24 - wangyu
-  - 🇯🇵 日本 (Japan) 25 - wangyu
-  - 🇯🇵 日本 (Japan) 26 - wangyu
-  - 🇯🇵 日本 (Japan) 27 - wangyu
-  - 🇯🇵 日本 (Japan) 28 - wangyu
-  - 🇯🇵 日本 (Japan) 29 - wangyu
-  - 🇯🇵 日本 (Japan) 30 - wangyu
-  - 🇯🇵 日本 (Japan) 31 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -371,14 +281,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 20 - wangyu
   - 🇯🇵 日本 (Japan) 21 - wangyu
   - 🇯🇵 日本 (Japan) 22 - wangyu
-  - 🇯🇵 日本 (Japan) 23 - wangyu
-  - 🇯🇵 日本 (Japan) 24 - wangyu
-  - 🇯🇵 日本 (Japan) 25 - wangyu
-  - 🇯🇵 日本 (Japan) 26 - wangyu
-  - 🇯🇵 日本 (Japan) 27 - wangyu
-  - 🇯🇵 日本 (Japan) 28 - wangyu
-  - 🇯🇵 日本 (Japan) 29 - wangyu
-  - 🇯🇵 日本 (Japan) 30 - wangyu
-  - 🇯🇵 日本 (Japan) 31 - wangyu
 rules:
 - MATCH,PROXIES
