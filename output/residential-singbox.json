@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - wangyu"
+        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - wangyu",
+        "🇩🇪 德国 (Germany) 02 (家宽) - wangyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - wangyu"
+        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - wangyu",
+        "🇩🇪 德国 (Germany) 02 (家宽) - wangyu"
       ],
       "url": "https://www.google.com/generate_204"
     },

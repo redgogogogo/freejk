@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - wangyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  servername: ''
 - name: 🇸🇪 SE 02 - wangyu
   type: vmess
   server: 62.93.166.184
@@ -30,7 +28,7 @@ proxies:
   servername: ''
 - name: 🇸🇪 SE 03 - wangyu
   type: vmess
-  server: leviko-se3307.shopingggg.ir
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -48,7 +46,7 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 05 - wangyu
   type: vmess
-  server: 62.93.166.184
+  server: 138.199.55.230
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -58,6 +56,20 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 06 - wangyu
+  type: vless
+  server: ws.dhafhdtjdti.site
+  port: 2053
+  uuid: 9f749472-c636-4c5a-af51-7f8feefaac81
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ws.dhafhdtjdti.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ws.dhafhdtjdti.site
+- name: 🇸🇪 SE 07 - wangyu
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -68,6 +80,32 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇸🇪 SE 08 - wangyu
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 09 - wangyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +117,9 @@ proxy-groups:
   - 🇸🇪 SE 04 - wangyu
   - 🇸🇪 SE 05 - wangyu
   - 🇸🇪 SE 06 - wangyu
+  - 🇸🇪 SE 07 - wangyu
+  - 🇸🇪 SE 08 - wangyu
+  - 🇸🇪 SE 09 - wangyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,5 +131,8 @@ proxy-groups:
   - 🇸🇪 SE 04 - wangyu
   - 🇸🇪 SE 05 - wangyu
   - 🇸🇪 SE 06 - wangyu
+  - 🇸🇪 SE 07 - wangyu
+  - 🇸🇪 SE 08 - wangyu
+  - 🇸🇪 SE 09 - wangyu
 rules:
 - MATCH,PROXIES
